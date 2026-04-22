@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROOF PROOF LTD | Ahli Atap Profesional Jarrow</title>
+    <style>
+        /* Modern Reset & Variables */
+        :root {
+            --primary: #2563eb; /* Blue Confidence */
+            --secondary: #0f172a; /* Dark Slate */
+            --accent: #f59e0b; /* Caution/Action Orange */
+            --bg: #ffffff;
+            --surface: #f8fafc;
+            --text-main: #1e293b;
+            --text-muted: #64748b;
+            --border: #e2e8f0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', -apple-system, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        /* Layout Helpers */
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* Navigation */
+        nav {
+            padding: 1.5rem 0;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: white;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo {
+            font-weight: 800;
+            font-size: 1.25rem;
+            color: var(--secondary);
+            letter-spacing: -0.5px;
+        }
+
+        .logo span {
+            color: var(--primary);
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 6rem 0;
+            text-align: center;
+            background: radial-gradient(circle at top right, #f1f5f9 0%, #ffffff 100%);
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            line-height: 1.1;
+            letter-spacing: -1px;
+            margin-bottom: 1.5rem;
+            color: var(--secondary);
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            color: var(--text-muted);
+            max-width: 600px;
+            margin: 0 auto 2.5rem;
+        }
+
+        .cta-btn {
+            display: inline-block;
+            background-color: var(--primary);
+            color: white;
+            padding: 1rem 2.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: transform 0.2s, background 0.2s;
+        }
+
+        .cta-btn:hover {
+            background-color: #1d4ed8;
+            transform: translateY(-2px);
+        }
+
+        /* Services Grid (Bento Style) */
+        .services {
+            padding: 4rem 0;
+        }
+
+        .section-tag {
+            color: var(--primary);
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 0.875rem;
+            display: block;
+            margin-bottom: 1rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .card {
+            background: var(--surface);
+            padding: 2rem;
+            border-radius: 16px;
+            border: 1px solid var(--border);
+            transition: all 0.3s;
+        }
+
+        .card:hover {
+            border-color: var(--primary);
+            box-shadow: 0 10px 30px -10px rgba(37, 99, 235, 0.1);
+        }
+
+        .card h3 {
+            margin-bottom: 1rem;
+            font-size: 1.25rem;
+        }
+
+        /* Information Section */
+        .info-section {
+            padding: 4rem 0;
+            border-top: 1px solid var(--border);
+            display: flex;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .info-content {
+            flex: 1;
+        }
+
+        .address-box {
+            background: var(--secondary);
+            color: white;
+            padding: 2.5rem;
+            border-radius: 20px;
+            flex: 1;
+        }
+
+        .address-box h4 {
+            color: var(--accent);
+            margin-bottom: 1rem;
+        }
+
+        /* Footer */
+        footer {
+            padding: 3rem 0;
+            text-align: center;
+            border-top: 1px solid var(--border);
+            color: var(--text-muted);
+            font-size: 0.875rem;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.5rem; }
+            .grid { grid-template-columns: 1fr; }
+            .info-section { flex-direction: column; text-align: center; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <nav>
+            <div class="logo">ROOF<span>PROOF</span></div>
+            <div>JARROW, UK</div>
+        </nav>
+    </div>
+
+    <section class="hero">
+        <div class="container">
+            <span class="section-tag">Solusi Atap Terpercaya</span>
+            <h1>Melindungi Bangunan Anda Dengan Presisi.</h1>
+            <p>Spesialis pemasangan dan pemeliharaan atap profesional untuk wilayah Jarrow dan sekitarnya.</p>
+            <a href="#kontak" class="cta-btn">Konsultasi Gratis</a>
+        </div>
+    </section>
+
+    <section class="services container">
+        <span class="section-tag">Layanan Kami</span>
+        <h2>Keahlian Teknis dalam Pengerjaan Atap</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Pemasangan Baru</h3>
+                <p>Implementasi sistem atap modern menggunakan material standar industri tertinggi untuk daya tahan jangka panjang.</p>
+            </div>
+            <div class="card">
+                <h3>Pemeliharaan Rutin</h3>
+                <p>Inspeksi berkala dan perawatan preventif untuk mencegah kebocoran dan kerusakan struktur bangunan.</p>
+            </div>
+            <div class="card">
+                <h3>Perbaikan Darurat</h3>
+                <p>Respon cepat untuk menangani kerusakan atap akibat cuaca ekstrim atau keausan material.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="kontak" class="container info-section">
+        <div class="info-content">
+            <span class="section-tag">Tentang Kami</span>
+            <h2>Berbasis di Jarrow, Melayani dengan Kualitas.</h2>
+            <p>Roof Proof Ltd berkomitmen untuk memberikan standar pengerjaan atap yang jujur dan transparan. Sebagai entitas bisnis yang terdaftar secara resmi di Inggris, kami mengedepankan keamanan kerja dan kepuasan klien.</p>
+        </div>
+        <div class="address-box">
+            <h4>Kantor Terdaftar:</h4>
+            <p><strong>ROOF PROOF LTD</strong></p>
+            <p>C/O Findlay Todd Accountants</p>
+            <p>Clervaux Exchange, Clervaux Terrace</p>
+            <p>JARROW, NE32 5UP</p>
+            <p>United Kingdom</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 ROOF PROOF LTD. Hak Cipta Dilindungi.</p>
+            <p>Hubungi kami: <a href="mailto:testdevtool@gmail.com" style="color: var(--primary);">testdevtool@gmail.com</a></p>
+        </div>
+    </footer>
+
+</body>
+</html>
